@@ -12,7 +12,6 @@ def Home(request):
         if form.is_valid():  # Check if the form is valid before saving
             form.save()
             return redirect('homepage')
-            form = Employeeform()
 
     data= Employee.objects.all()
     context = {
